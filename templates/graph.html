@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Visualization</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/graph.css') }}">
+</head>
+
+<body>
+
+    <div class="graph-container">
+        <h1>Graph Visualization of Shortest Path</h1>
+
+        <!-- Graph Image -->
+        <img src="{{ url_for('visualize_graph', start=start, end=end) }}" alt="Graph Visualization" class="graph-image">
+
+        <!-- Centered Button -->
+        <a href="/dijkstra" class="back-btn">Go Back</a>
+    </div>
+
+</body>
+
+</html>

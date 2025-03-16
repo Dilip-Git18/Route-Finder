@@ -1,0 +1,50 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #f0f0f0, #e6f7ff); /* Light gradient background */
+    padding: 50px;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header Styling */
+h1 {
+    color: #2E8B57; /* Green color for header */
+    font-size: 3em; /* Larger heading */
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase for emphasis */
+    margin-bottom: 20px; /* Margin below the heading */
+}
+
+/* Container Styles */
+.container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 18px;
+    color: white;
+    background: #2E8B57; /* Green button */
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 10px;
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.button:hover {
+    background: #3CB371; /* Lighter green on hover */
+    transform: scale(1.05); /* Slight enlarge effect on hover */
+}
