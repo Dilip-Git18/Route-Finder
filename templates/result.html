@@ -18,11 +18,6 @@
         {% if path and path != 'None' %}
         <div class="success-message">✅ <strong>Optimal Route:</strong> {{ path }}</div>
 
-        <!-- Button to Navigate to Graph Page -->
-        <form action="{{ url_for('show_graph') }}" method="get">
-            <input type="hidden" name="path" value="{{ path }}">
-            <button type="submit" class="button">🔍 Show Graph</button>
-        </form>
 
         {% else %}
         <div class="error-message">❌ No valid route found!</div>
